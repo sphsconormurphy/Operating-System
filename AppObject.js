@@ -41,10 +41,12 @@ function App(n,m,s){
 
 
 //Use the constructor to create 4 App objects below.
-var browser = new App(chrome, 1, "active");
-
+var browser = new App("Chrome",  1, "active");
+var store = new App("App Store", .25, "active");
+var email = new App("Outlook", .5, null);
+var books = new App("Bluefire", .1, "open");
 
 //Declare an array named appList, and place all 4 of your apps in that array.
 //The order does not matter.
 
-var appList = [browser; ];
+var appList = [browser; store; email; books];
